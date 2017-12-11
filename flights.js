@@ -1,4 +1,10 @@
+require('dotenv-extended').load();
+
+var builder = require('botbuilder');
+var restify = require('restify');
+
 var FacebookDataModels = require('./facebook-channeldata');
+
 module.exports = function (session) {
     //session.error('Flights Dialog is not implemented and is instead being used to show Bot error handling');
     
